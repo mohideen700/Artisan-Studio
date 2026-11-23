@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 360" width="650" height="360">
+  <defs>
+    <radialGradient id="coldGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5eedc"/>
+      <stop offset="100%" stop-color="#e3d3bd"/>
+    </radialGradient>
+  </defs>
+  <rect width="650" height="360" fill="url(#coldGrad)" rx="6"/>
+  <text x="50" y="70" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#4a3728">Cold-Pressed Heavy Cartridge</text>
+  <text x="50" y="98" font-family="sans-serif" font-size="13" fill="#6d5540">Weight: 300 gsm &bull; Surface: Medium Grain Tooth &bull; Ideal for Vine Charcoal &amp; Dry Pastels</text>
+  
+  <g stroke="#261d16" stroke-width="2" opacity="0.6">
+    <path d="M220,150 L440,250 M240,140 L460,240 M200,170 L420,270"/>
+    <path d="M440,150 L220,250 M460,140 L240,240 M420,170 L200,270" stroke-width="1.5"/>
+  </g>
+  <rect x="45" y="285" width="180" height="30" fill="#4a3728" rx="4"/>
+  <text x="55" y="305" fill="#ffffff" font-size="12" font-family="sans-serif" font-weight="bold">Maximum Charcoal Grab</text>
+</svg>

@@ -1,0 +1,378 @@
+/* ==========================================================================
+   Artisan Studio - Home Page Stylesheet (main.css)
+   Layout: Three-column layout (Sidebar A, Main Section, Sidebar B)
+   With Dynamic Studio Color Themes & CSS Variables
+   ========================================================================== */
+
+@import url("themes.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-color, #2b2b2b);
+    background-color: var(--body-bg, #e2e8f0);
+    margin: 0;
+    padding: 20px 0 40px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Page Container (Fixed width & centered)
+   -------------------------------------------------------------------------- */
+.page-container {
+    width: 980px;
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: var(--container-bg, #ffffff);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+    border: 1px solid var(--container-border, #b0bec5);
+    transition: all 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Header with Gradient & Typography
+   -------------------------------------------------------------------------- */
+header.site-header {
+    background: var(--header-gradient);
+    padding: 20px 30px 18px 30px;
+    color: #ffffff;
+    border-bottom: 2px solid var(--accent-color, #d4af37);
+    transition: background 0.4s ease;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.site-logo {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.header-text h1.site-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-text p.site-tagline {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--tagline-color, #f3d79b);
+    margin: 4px 0 0 0;
+    letter-spacing: 1px;
+}
+
+/* --------------------------------------------------------------------------
+   Horizontal Navigation Menu
+   -------------------------------------------------------------------------- */
+nav.main-nav {
+    background-color: var(--nav-bg, #111a24);
+    border-top: 1px solid var(--nav-border, #223244);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav.main-nav li {
+    flex: 1 1 auto;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav.main-nav li:last-child {
+    border-right: none;
+}
+
+nav.main-nav a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav.main-nav a:hover,
+nav.main-nav a:focus {
+    background-color: var(--nav-active-bg, #1e3a5f);
+    color: var(--nav-active-text, #ffd700);
+}
+
+nav.main-nav a.active {
+    background-color: var(--nav-active-bg, #1e3a5f);
+    color: var(--nav-active-text, #ffd700);
+}
+
+/* --------------------------------------------------------------------------
+   Three-Column Layout Container
+   -------------------------------------------------------------------------- */
+.main-wrapper {
+    padding: 24px 20px;
+}
+
+.main-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Left Sidebar (Sidebar A) */
+aside.sidebar-left {
+    float: left;
+    width: 20%;
+    padding-right: 18px;
+    border-right: 1px solid var(--box-border, #e2e8f0);
+}
+
+/* Center Content (Main Section) */
+section.main-content {
+    float: left;
+    width: 58%;
+    padding: 0 22px;
+}
+
+/* Right Sidebar (Sidebar B) */
+aside.sidebar-right {
+    float: right;
+    width: 22%;
+    padding-left: 18px;
+    border-left: 1px solid var(--box-border, #e2e8f0);
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar Components & Navigation Lists
+   -------------------------------------------------------------------------- */
+.sidebar-box {
+    margin-bottom: 24px;
+    background-color: var(--box-bg, #f8fafc);
+    border: 1px solid var(--box-border, #e2e8f0);
+    padding: 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-box h2,
+.sidebar-box h3 {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    color: var(--heading-color, #1e3a5f);
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--accent-color, #d4af37);
+    transition: color 0.3s ease;
+}
+
+.sidebar-box ul,
+.sidebar-box ol {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.sidebar-box li {
+    margin-bottom: 9px;
+    font-size: 13.5px;
+    line-height: 1.45;
+}
+
+.sidebar-box a {
+    color: var(--primary-light, #1e3a5f);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sidebar-box a:hover {
+    color: var(--primary-color, #0f1f33);
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Main Content Elements (Headings, Floated Images, Text)
+   -------------------------------------------------------------------------- */
+section.main-content h2.content-title {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    color: var(--heading-color, #1e3a5f);
+    margin-top: 0;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--box-border, #e2e8f0);
+    padding-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.hero-image-wrap {
+    float: left;
+    margin: 0 18px 14px 0;
+    max-width: 290px;
+}
+
+.hero-image-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--box-border, #cbd5e1);
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.hero-image-wrap figcaption {
+    font-size: 12px;
+    color: #665b50;
+    margin-top: 6px;
+    text-align: center;
+    font-style: italic;
+}
+
+section.main-content p {
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+.feature-list-box {
+    clear: both;
+    margin-top: 22px;
+    padding: 16px 20px;
+    background-color: var(--box-bg, #f8fafc);
+    border-left: 4px solid var(--primary-color, #1e3a5f);
+    border-radius: 0 4px 4px 0;
+    transition: border-left-color 0.3s ease;
+}
+
+.feature-list-box h3 {
+    margin-top: 0;
+    color: var(--heading-color, #1e3a5f);
+    font-size: 18px;
+}
+
+.feature-list-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.feature-list-box li {
+    margin-bottom: 7px;
+}
+
+/* --------------------------------------------------------------------------
+   Footer with Gradient & Character Entities
+   -------------------------------------------------------------------------- */
+footer.site-footer {
+    clear: both;
+    background: var(--footer-gradient);
+    color: #f7f2e7;
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 13px;
+    border-top: 2px solid var(--accent-color, #d4af37);
+    transition: background 0.4s ease;
+}
+
+footer.site-footer p {
+    margin: 4px 0;
+}
+
+footer.site-footer a {
+    color: var(--accent-hover, #ffd700);
+    text-decoration: none;
+}
+
+footer.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Media Queries
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 860px) {
+    .page-container {
+        width: 100%;
+        border: none;
+    }
+
+    aside.sidebar-left {
+        width: 25%;
+    }
+
+    section.main-content {
+        width: 75%;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    aside.sidebar-right {
+        float: none;
+        clear: both;
+        width: 100%;
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid var(--box-border, #e2e8f0);
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        padding: 0;
+    }
+
+    .theme-switch-bar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.main-nav ul {
+        flex-direction: column;
+    }
+
+    nav.main-nav li {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    aside.sidebar-left,
+    section.main-content,
+    aside.sidebar-right {
+        float: none;
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    aside.sidebar-left {
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--box-border, #e2e8f0);
+        padding-bottom: 15px;
+    }
+
+    .hero-image-wrap {
+        float: none;
+        max-width: 100%;
+        margin: 0 0 16px 0;
+    }
+}
