@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Studio - Fine Drawing Materials &amp; Supplies</title>
+    <!-- Stylesheets: normalize.css for browser resets, main.css for home page -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-graphite" value="graphite" checked>
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-charcoal" value="charcoal">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-ink" value="ink">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-sanguine" value="sanguine">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-sepia" value="sepia">
+
+    <!-- Fixed-width, centered page container -->
+    <div class="page-container">
+        <div class="drawing-style-bar" aria-label="Drawing style colors">
+            <span class="drawing-style-label">Drawing Style</span>
+            <label for="drawing-style-graphite"><span class="drawing-style-dot graphite"></span>Graphite</label>
+            <label for="drawing-style-charcoal"><span class="drawing-style-dot charcoal"></span>Charcoal</label>
+            <label for="drawing-style-ink"><span class="drawing-style-dot ink"></span>Ink</label>
+            <label for="drawing-style-sanguine"><span class="drawing-style-dot sanguine"></span>Sanguine</label>
+            <label for="drawing-style-sepia"><span class="drawing-style-dot sepia"></span>Sepia</label>
+        </div>
+
+        <!-- Site Header with Gradient, Logo, Title, and Tagline -->
+        <header class="site-header">
+            <div class="header-brand">
+                <img src="images/logo.svg" alt="Artisan Studio Logo" class="site-logo">
+                <div class="header-text">
+                    <h1 class="site-title">Artisan Studio</h1>
+                    <p class="site-tagline">A curated guide to professional drawing materials, papers, and studio tools
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Horizontal Navigation Menu -->
+        <nav class="main-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="graphite-charcoal.html">Pencils &amp; Charcoal</a></li>
+                <li><a href="paper-surfaces.html">Paper &amp; Surfaces</a></li>
+                <li><a href="pens-accessories.html">Inks &amp; Accessories</a></li>
+            </ul>
+        </nav>
+
+        <!-- Three-Column Layout Container: Left Aside, Main Section, Right Aside -->
+        <div class="main-wrapper">
+
+            <!-- Sidebar A: Left Aside with Navigation Links -->
+            <aside class="sidebar-left" aria-label="Quick Navigation">
+                <div class="sidebar-box">
+                    <h2>Explore Materials</h2>
+                    <ul>
+                        <li><a href="graphite-charcoal.html">Graphite &amp; Charcoal</a></li>
+                        <li><a href="paper-surfaces.html">Papers &amp; Sketchbooks</a></li>
+                        <li><a href="pens-accessories.html">Inks &amp; Studio Tools</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Core Mediums</h3>
+                    <ul>
+                        <li><strong>Graphite:</strong> Graded 9H to 9B</li>
+                        <li><strong>Charcoal:</strong> Vine &amp; Compressed</li>
+                        <li><strong>Inks:</strong> Waterproof India Ink</li>
+                        <li><strong>Surfaces:</strong> Hot &amp; Cold Press</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Free Resources</h3>
+                    <p style="font-size: 13px; margin: 0 0 8px 0;">Listen to our studio audio overview or download the
+                        paper reference chart.</p>
+                    <a href="paper-surfaces.html" style="font-size: 13px; font-weight: bold; color: #800020;">View
+                        Resources &rarr;</a>
+                </div>
+            </aside>
+
+            <!-- Main Content Section: Floated Image, Headings, and Descriptive Text -->
+            <section class="main-content">
+                <h2 class="content-title">Welcome to the World of Drawing Materials</h2>
+
+                <!-- Floated Hero Image with Figure and Caption -->
+                <figure class="hero-image-wrap">
+                    <img src="./images/images.jpg"
+                        alt="Classic artist drawing desk with graphite pencils, sketchbook, and charcoal">
+                    <figcaption>Figure 1: Traditional artist workspace setup</figcaption>
+                </figure>
+
+                <p>
+                    Every compelling piece of visual art begins with a single deliberate mark. Whether you are creating
+                    swift gesture thumbnails in a pocket sketchbook or rendering intricate architectural cross-sections,
+                    the physical characteristics of your drawing materials fundamentally shape your artistic expression.
+                </p>
+
+                <p>
+                    Traditional drawing tools bridge the gap between creative thought and physical tangible form. The
+                    resistance of graphite across a textured sheet, the velvety depth of pure willow charcoal, and the
+                    crisp, permanent black line of archival pigment ink each provide unique mechanical properties and
+                    visual qualities.
+                </p>
+
+                <p>
+                    Selecting appropriate supplies does not require excessive expense; rather, it demands an
+                    understanding of how distinct mediums interact with varying paper fibers, surface textures, and
+                    blending tools. By mastering hardness gradations, paper weights, and studio ergonomics, draftsmen of
+                    every discipline can achieve greater confidence and tonal control.
+                </p>
+
+                <!-- Unordered Feature List -->
+                <div class="feature-list-box">
+                    <h3>Essential Drawing Studio Disciplines:</h3>
+                    <ul>
+                        <li><strong>Tonal Control:</strong> Mastering value gradations from pure white highlights to
+                            deepest matte shadows.</li>
+                        <li><strong>Surface Chemistry:</strong> Choosing between plate-smooth Bristol boards and toothy
+                            cold-pressed cotton rag.</li>
+                        <li><strong>Line Sensitivity:</strong> Utilizing flexible metal dip nibs and technical
+                            fineliners for expressive contour work.</li>
+                        <li><strong>Preservation &amp; Care:</strong> Employing kneaded erasers, workable fixatives, and
+                            archival acid-free storage.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sidebar B: Right Aside with Highlights & Tips -->
+            <aside class="sidebar-right" aria-label="Studio Tips and Highlights">
+                <div class="sidebar-box">
+                    <h2>Studio Tips</h2>
+                    <ol>
+                        <li>Hold pencils further back on the barrel for relaxed gestural strokes.</li>
+                        <li>Use kneaded erasers to dab and lift pigment without abrading paper fibers.</li>
+                        <li>Place a clean sheet of glassine paper beneath your drawing hand to prevent skin oil
+                            smudging.</li>
+                        <li>Spray workable fixative in thin, even layers in a well-ventilated area.</li>
+                    </ol>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Featured Medium</h3>
+                    <p style="font-size: 13.5px; margin-bottom: 8px;">
+                        <strong>Willow Vine Charcoal:</strong> Feather-light, naturally carbonized twigs that yield
+                        soft, smoky grey values with effortless wipe-away erasability.
+                    </p>
+                    <a href="graphite-charcoal.html" style="font-size: 13px; font-weight: bold; color: #800020;">Read
+                        Charcoal Guide &rarr;</a>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- Site Footer with Gradient and Character Entities -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Artisan Studio &bull; Dedicated to Traditional Draughtsmanship &amp; Fine Art Materials</p>
+            <p>Designed with Semantic HTML5, CSS3 Grid/Float Layout, and Responsive Breakpoints</p>
+        </footer>
+
+    </div>
+    
+   
+</body>
+</html>

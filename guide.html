@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Materials Guide (PDF) - Artisan Studio</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <style>
+        .pdf-viewer-wrap {
+            width: 100%;
+            height: 820px;
+            border: 1px solid var(--box-border, #c0cad6);
+            border-radius: 6px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+            background-color: #525659;
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .pdf-viewer-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .guide-highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .highlight-card {
+            background-color: var(--box-bg, #f0f3f7);
+            border: 1px solid var(--box-border, #c0cad6);
+            border-top: 3px solid var(--primary-color, #0f1f3a);
+            padding: 14px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .highlight-card h4 {
+            margin: 0 0 6px 0;
+            color: var(--heading-color, #0f1f3a);
+            font-size: 15px;
+        }
+
+        .highlight-card p {
+            margin: 0;
+            font-size: 13px;
+            color: #665b50;
+            line-height: 1.45;
+        }
+
+        .action-button-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-graphite" value="graphite" checked>
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-charcoal" value="charcoal">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-ink" value="ink">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-sanguine" value="sanguine">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-sepia" value="sepia">
+
+    <div class="page-container">
+        <div class="drawing-style-bar" aria-label="Drawing style colors">
+            <span class="drawing-style-label">Drawing Style</span>
+            <label for="drawing-style-graphite"><span class="drawing-style-dot graphite"></span>Graphite</label>
+            <label for="drawing-style-charcoal"><span class="drawing-style-dot charcoal"></span>Charcoal</label>
+            <label for="drawing-style-ink"><span class="drawing-style-dot ink"></span>Ink</label>
+            <label for="drawing-style-sanguine"><span class="drawing-style-dot sanguine"></span>Sanguine</label>
+            <label for="drawing-style-sepia"><span class="drawing-style-dot sepia"></span>Sepia</label>
+        </div>
+
+        <header class="site-header">
+            <div class="header-brand">
+                <img src="images/logo.svg" alt="Artisan Studio Logo" class="site-logo">
+                <div class="header-text">
+                    <h1 class="site-title">Artisan Studio</h1>
+                    <p class="site-tagline">A curated guide to professional drawing materials, papers, and studio tools</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="graphite-charcoal.html">Pencils &amp; Charcoal</a></li>
+                <li><a href="paper-surfaces.html">Paper &amp; Surfaces</a></li>
+                <li><a href="pens-accessories.html">Inks &amp; Accessories</a></li>
+                <li><a href="guide.html" class="active">Drawing Guide (PDF)</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-wrapper">
+
+            <aside class="content-sidebar" aria-label="Guide Bookmarks and Downloads">
+                <div class="sidebar-section">
+                    <h2>Guide Actions</h2>
+                    <div style="margin-bottom: 14px;">
+                        <a href="docs/drawing-materials-guide.pdf" class="btn-action" style="display: block; text-align: center; margin-bottom: 8px;" download>
+                            &darr; Download PDF
+                        </a>
+                        <a href="docs/drawing-materials-guide.pdf" class="btn-action" style="display: block; text-align: center; opacity: 0.85;" target="_blank">
+                            &nearr; Open in Full Window
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Guide Chapters</h3>
+                    <ul class="resource-links">
+                        <li><strong>Page 1:</strong> Overview &amp; Swatches</li>
+                        <li><strong>Page 2:</strong> Graphite &amp; Dry Media</li>
+                        <li><strong>Page 3:</strong> Paper &amp; Blending Tools</li>
+                        <li><strong>Page 4:</strong> Building Your Studio Kit</li>
+                        <li><strong>Page 5:</strong> Safety &amp; Practice Routine</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Other Pages</h3>
+                    <ul class="resource-links">
+                        <li><a href="index.html">&larr; Return to Home Page</a></li>
+                        <li><a href="graphite-charcoal.html">Graphite &amp; Charcoal</a></li>
+                        <li><a href="paper-surfaces.html">Paper Textures &amp; Carousel</a></li>
+                        <li><a href="pens-accessories.html">Inks &amp; Accessories</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="content-main">
+                <h2 class="main-heading">Artisan Studio Drawing Materials Guide</h2>
+
+                <p style="margin-top: 0; margin-bottom: 16px;">
+                    Read our official 5-page publication below, or download the printable PDF for offline study.
+                </p>
+
+                <div class="action-button-row">
+                    <a href="docs/drawing-materials-guide.pdf" class="btn-action" download>&darr; Download Official PDF Guide</a>
+                    <a href="docs/drawing-materials-guide.pdf" class="btn-action" style="opacity: 0.85;" target="_blank">Open Fullscreen</a>
+                </div>
+
+                <div class="pdf-viewer-wrap">
+                    <object data="docs/drawing-materials-guide.pdf#toolbar=1&navpanes=1" type="application/pdf" class="pdf-viewer-frame">
+                        <iframe src="docs/drawing-materials-guide.pdf" class="pdf-viewer-frame">
+                            <p>Your browser does not support embedded PDF viewing.
+                                <a href="docs/drawing-materials-guide.pdf" class="btn-action">Download the PDF</a>.
+                            </p>
+                        </iframe>
+                    </object>
+                </div>
+
+                <h3 style="font-family: Georgia, serif; color: var(--heading-color); margin-top: 24px; margin-bottom: 12px;">Booklet Topics &amp; Reference Charts</h3>
+                <div class="guide-highlights-grid">
+                    <div class="highlight-card">
+                        <h4>1. Graphite Hardness</h4>
+                        <p>2H, HB, 2B, 4B, and 6B grades, what each mark does, and ideal applications.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>2. Charcoal &amp; Dry Media</h4>
+                        <p>Vine willow sticks, compressed blocks, charcoal pencils, and sanguine chalk.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>3. Paper Sizing &amp; Weights</h4>
+                        <p>GSM weights, tooth characteristics, Bristol plate, rough cartridge, toned grounds.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>4. Erasers &amp; Blending</h4>
+                        <p>Kneaded putty, vinyl erasers, paper tortillons, and dry chamois blending.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>5. Build Your Studio Kit</h4>
+                        <p>Starter kit checklist paired with upgrade recommendations for advancing artists.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>6. 20-Minute Routine</h4>
+                        <p>A structured daily warm-up: gestures, tonal scales, and contour studies.</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Artisan Studio &bull; Dedicated to Traditional Draughtsmanship &amp; Fine Art Materials</p>
+            <p>Official 5-Page Drawing Materials Guide &bull; Available in Print &amp; Digital Editions</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

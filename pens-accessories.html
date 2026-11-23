@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inks &amp; Studio Accessories - Artisan Studio</title>
+    <!-- Stylesheets: normalize.css and content.css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/content.css">
+</head>
+
+<body>
+
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-graphite" value="graphite" checked>
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-charcoal" value="charcoal">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-ink" value="ink">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-sanguine" value="sanguine">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-sepia" value="sepia">
+
+    <!-- Fixed-width, centered container -->
+    <div class="page-container">
+        <div class="drawing-style-bar" aria-label="Drawing style colors">
+            <span class="drawing-style-label">Drawing Style</span>
+            <label for="drawing-style-graphite"><span class="drawing-style-dot graphite"></span>Graphite</label>
+            <label for="drawing-style-charcoal"><span class="drawing-style-dot charcoal"></span>Charcoal</label>
+            <label for="drawing-style-ink"><span class="drawing-style-dot ink"></span>Ink</label>
+            <label for="drawing-style-sanguine"><span class="drawing-style-dot sanguine"></span>Sanguine</label>
+            <label for="drawing-style-sepia"><span class="drawing-style-dot sepia"></span>Sepia</label>
+        </div>
+
+        <!-- Site Header with Gradient, Logo, and Title -->
+        <header class="site-header">
+            <div class="header-brand">
+                <img src="images/logo.svg" alt="Artisan Studio Logo" class="site-logo">
+                <div class="header-text">
+                    <h1 class="site-title">Artisan Studio</h1>
+                    <p class="site-tagline">A curated guide to professional drawing materials, papers, and studio tools
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Horizontal Navigation Bar -->
+        <nav class="main-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="graphite-charcoal.html">Pencils &amp; Charcoal</a></li>
+                <li><a href="paper-surfaces.html">Paper &amp; Surfaces</a></li>
+                <li><a href="pens-accessories.html" class="active">Inks &amp; Accessories</a></li>
+            </ul>
+        </nav>
+
+        <!-- Two-Column Layout Wrapper -->
+        <div class="main-wrapper">
+
+            <!-- Left Aside: Studio maintenance tips & links -->
+            <aside class="content-sidebar" aria-label="Studio Accessories Navigation">
+                <div class="sidebar-section">
+                    <h2>Studio Kit Index</h2>
+                    <ul class="resource-links">
+                        <li><a href="#technical-pens">&bull; Technical Fineliners</a></li>
+                        <li><a href="#dip-pens">&bull; Calligraphy Dip Nibs</a></li>
+                        <li><a href="#india-inks">&bull; Shellac India Inks</a></li>
+                        <li><a href="#studio-hardware">&bull; Boards, Rulers &amp; Tape</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Maintenance Guidelines</h3>
+                    <ul style="padding-left: 18px; margin: 0; font-size: 13.5px; line-height: 1.5;">
+                        <li>Never let waterproof India ink dry completely inside technical dip pens.</li>
+                        <li>Rinse metal nibs in lukewarm water and wipe dry with a lint-free cloth.</li>
+                        <li>Store pigment fineliners horizontally to ensure balanced capillary flow.</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Explore Other Guides</h3>
+                    <ul class="resource-links">
+                        <li><a href="index.html">&larr; Return to Home Page</a></li>
+                        <li><a href="graphite-charcoal.html">Graphite &amp; Charcoal Guide</a></li>
+                        <li><a href="paper-surfaces.html">Drawing Surfaces &amp; Paper</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Content Section -->
+            <section class="content-main">
+                <h2 class="main-heading">Inks, Fineliners &amp; Studio Hardware</h2>
+
+                <!-- Scalable Figure with Image & Caption -->
+                <figure class="content-figure">
+                    <img src="./images/41i+hHUEEjL.jpg" alt="Technical drawing pens, dip nibs, and India ink bottle">
+                    <figcaption>Figure 3: Archival pigment fineliners, traditional flexible steel dip nibs, and carbon
+                        India ink</figcaption>
+                </figure>
+
+                <!-- Comparison Table of Inking Mediums -->
+                <div class="data-table-wrap">
+                    <table class="comparison-table"
+                        summary="Detailed comparison of technical drawing pens and inking tools">
+                        <thead>
+                            <tr>
+                                <th>Tool / Medium</th>
+                                <th>Mechanism / Nib</th>
+                                <th>Line Width Range</th>
+                                <th>Primary Application</th>
+                                <th>Archival Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Micron Fineliner</strong></td>
+                                <td>Porous polyacetal nib</td>
+                                <td>0.05 mm &ndash; 0.8 mm</td>
+                                <td>Outlining, crosshatching, stippling</td>
+                                <td>Permanent, acid-free</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flexible G-Nib</strong></td>
+                                <td>Slotted spring steel</td>
+                                <td>Variable with pressure</td>
+                                <td>Comics, calligraphy, dynamic contour</td>
+                                <td>Depends on bottled ink</td>
+                            </tr>
+                            <tr>
+                                <td><strong>India Ink</strong></td>
+                                <td>Lampblack carbon &amp; shellac</td>
+                                <td>Brush or dip application</td>
+                                <td>Opaque silhouettes, rich washes</td>
+                                <td>100% waterproof when dry</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rotring Technical Pen</strong></td>
+                                <td>Tungsten wire gravity feed</td>
+                                <td>0.18 mm calibrated point</td>
+                                <td>Architectural drafting &amp; schematics</td>
+                                <td>Precision lightfast ink</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Two-Column Article on Ink Chemistry and Studio Tools -->
+                <article class="two-column-article">
+                    <p id="technical-pens">
+                        Inking represents one of the most definitive disciplines in graphic art. Unlike graphite or
+                        charcoal, which allow for progressive erasure and modification, an ink stroke commits with
+                        immediate authority. Modern disposable technical pens utilize micro-pigment particles suspended
+                        in water-based binders.
+                    </p>
+
+                    <p id="india-inks">
+                        Because pigment particles do not bleed into the paper fibers like dye-based inks, they produce
+                        razor-sharp edges and offer exceptional resistance against UV sunlight fading and water
+                        solubility once cured. Traditional India ink pairs pure carbon black with shellac, creating an
+                        indelible semi-gloss sheen that resists watercolor washes.
+                    </p>
+
+                    <p id="dip-pens">
+                        For artists seeking dynamic variation in stroke width, the traditional dip pen remains
+                        unparalleled. By varying downward hand pressure, the dual tines of a flexible steel nib
+                        separate, expanding line weight from hairline subtleties to bold strokes in a continuous,
+                        flowing sweep.
+                    </p>
+
+                    <p id="studio-hardware">
+                        Beyond pens and inkwells, a well-equipped studio requires dedicated hardware: an inclined
+                        drawing board to avoid perspective distortion, beveled stainless steel rulers that prevent ink
+                        from bleeding underneath the guide edge, and low-tack artist drafting tape that holds paper
+                        securely without lifting the sizing or tearing borders upon removal.
+                    </p>
+                </article>
+
+                <!-- Studio Hardware Figure -->
+                <figure class="content-figure">
+                    <img src="images/tools-collection.svg"
+                        alt="Essential artist studio setup including drawing board, steel ruler, tape, and pointer">
+                    <figcaption>Figure 4: Fundamental studio accessories for drafting precision and paper care
+                    </figcaption>
+                </figure>
+
+            </section>
+
+        </div>
+
+     
+        <footer class="site-footer">
+            <p>&copy; 2026 Artisan Studio &bull; Dedicated to Traditional Draughtsmanship &amp; Fine Art Materials</p>
+            <p>Designed with Semantic HTML5, CSS3 Grid/Float Layout, and Responsive Breakpoints</p>
+        </footer>
+
+    </div>
+
+    <!-- Interactive Theme Switcher Script -->
+</body>
+</html>

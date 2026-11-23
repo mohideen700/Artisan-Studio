@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper &amp; Drawing Surfaces - Artisan Studio</title>
+    <!-- Stylesheets: normalize.css and content.css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/content.css">
+</head>
+
+<body>
+
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-graphite" value="graphite" checked>
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-charcoal" value="charcoal">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-ink" value="ink">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-sanguine" value="sanguine">
+    <input class="drawing-style-radio" type="radio" name="drawing-style" id="drawing-style-sepia" value="sepia">
+
+    <!-- Fixed-width, centered container -->
+    <div class="page-container">
+        <div class="drawing-style-bar" aria-label="Drawing style colors">
+            <span class="drawing-style-label">Drawing Style</span>
+            <label for="drawing-style-graphite"><span class="drawing-style-dot graphite"></span>Graphite</label>
+            <label for="drawing-style-charcoal"><span class="drawing-style-dot charcoal"></span>Charcoal</label>
+            <label for="drawing-style-ink"><span class="drawing-style-dot ink"></span>Ink</label>
+            <label for="drawing-style-sanguine"><span class="drawing-style-dot sanguine"></span>Sanguine</label>
+            <label for="drawing-style-sepia"><span class="drawing-style-dot sepia"></span>Sepia</label>
+        </div>
+
+        <!-- Site Header with Gradient, Logo, and Title -->
+        <header class="site-header">
+            <div class="header-brand">
+                <img src="images/logo.svg" alt="Artisan Studio Logo" class="site-logo">
+                <div class="header-text">
+                    <h1 class="site-title">Artisan Studio</h1>
+                    <p class="site-tagline">A curated guide to professional drawing materials, papers, and studio tools
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Horizontal Navigation Bar -->
+        <nav class="main-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="graphite-charcoal.html">Pencils &amp; Charcoal</a></li>
+                <li><a href="paper-surfaces.html" class="active">Paper &amp; Surfaces</a></li>
+                <li><a href="pens-accessories.html">Inks &amp; Accessories</a></li>
+            </ul>
+        </nav>
+
+        
+        <div class="main-wrapper">
+
+            <!-- Left Aside: Additional Resources (Audio & PDF) and Navigation -->
+            <aside class="content-sidebar" aria-label="Sidebar Resources">
+                <div class="sidebar-section">
+                    <h2>Additional Resources</h2>
+                    <ul class="resource-links">
+                        <li><a href="./audio/vidssave.com What Are These Tools in Your Drawing Set_!_ 48KBPS.mp3"
+                                download>&bull; Audio Tour &amp; Guide</a></li>
+                        <li><a href="docs/drawing-materials-catalog.pdf" target="_blank">&bull; Display Catalog
+                                (PDF)</a></li>
+                        <li><a href="#paper-weights">&bull; GSM Weight Specifications</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Explore Mediums</h3>
+                    <ul class="resource-links">
+                        <li><a href="index.html">&larr; Return to Home Page</a></li>
+                        <li><a href="graphite-charcoal.html">Graphite &amp; Charcoal Guide</a></li>
+                        <li><a href="pens-accessories.html">Inks &amp; Studio Equipment</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Surface Terminology</h3>
+                    <p style="font-size: 13px; line-height: 1.5; color: #555;">
+                        <strong>Tooth:</strong> The microscopic texture and roughness of a paper surface that
+                        mechanically grabs particles of dry pigment.
+                    </p>
+                </div>
+            </aside>
+
+            <!-- Main Content Section: Carousel, Media Links, and Descriptive Text -->
+            <section class="content-main">
+                <h2 class="main-heading">Drawing Surfaces &amp; Paper Textures</h2>
+
+                <!-- Interactive Image Carousel Component -->
+                <div class="carousel-container" aria-label="Drawing Paper Showcase Carousel">
+                    <input class="carousel-radio" type="radio" name="paper-slide" id="paper-slide-1" checked>
+                    <input class="carousel-radio" type="radio" name="paper-slide" id="paper-slide-2">
+                    <input class="carousel-radio" type="radio" name="paper-slide" id="paper-slide-3">
+
+                    <div class="carousel-slides">
+                        <div class="carousel-slide">
+                            <img src="./images/images (1).jpg" alt="Plate Smooth Bristol Board Paper">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./images/images (2).jpg" alt="Cold-Pressed Heavy Cartridge Textured Paper">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./images/toned-tan-sketch-paper-strathmore-23-x-31-cm-118-g-50-sheets.jpg"
+                                alt="Toned Tan Sketching Paper with Highlights">
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls slide-1-controls">
+                        <label class="carousel-nav-btn prev" for="paper-slide-3" aria-label="Previous Slide">&#10094;</label>
+                        <label class="carousel-nav-btn next" for="paper-slide-2" aria-label="Next Slide">&#10095;</label>
+                    </div>
+                    <div class="carousel-controls slide-2-controls">
+                        <label class="carousel-nav-btn prev" for="paper-slide-1" aria-label="Previous Slide">&#10094;</label>
+                        <label class="carousel-nav-btn next" for="paper-slide-3" aria-label="Next Slide">&#10095;</label>
+                    </div>
+                    <div class="carousel-controls slide-3-controls">
+                        <label class="carousel-nav-btn prev" for="paper-slide-2" aria-label="Previous Slide">&#10094;</label>
+                        <label class="carousel-nav-btn next" for="paper-slide-1" aria-label="Next Slide">&#10095;</label>
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <label class="indicator-dot" for="paper-slide-1" title="Slide 1"></label>
+                        <label class="indicator-dot" for="paper-slide-2" title="Slide 2"></label>
+                        <label class="indicator-dot" for="paper-slide-3" title="Slide 3"></label>
+                    </div>
+                </div>
+
+                <!-- Media Link Cards (Audio File & PDF File) -->
+                <div class="media-card">
+                    <h3>Studio Audio Guide: "What Are These Tools in Your Drawing Set?"</h3>
+                    <p>
+                        Listen to our comprehensive narrated guide explaining how each drawing tool, paper tooth, and
+                        eraser in your set interacts on paper.
+                    </p>
+                    <audio controls style="width: 100%; margin-bottom: 10px;">
+                        <source src="audio/drawing-audio-guide.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <a href="audio/drawing-audio-guide.mp3" class="btn-action"
+                        download="drawing-tools-audio-guide.mp3">Download Audio Guide (.mp3)</a>
+                </div>
+
+                <div class="media-card">
+                    <h3>Comprehensive Paper Selection Chart</h3>
+                    <p>
+                        Download our comprehensive printable reference matrix containing GSM weights, fiber contents,
+                        and medium recommendations.
+                    </p>
+                    <a href="docs/drawing-materials-guide.pdf" class="btn-action" target="_blank">Download Official
+                        Guide (.PDF)</a>
+                    <a href="guide.html" class="btn-action" style="background-color: #1e3a5f; margin-left: 6px;">View in
+                        Interactive Reader &rarr;</a>
+                </div>
+
+                <!-- Two-Column Article on Paper Properties -->
+                <article class="two-column-article" id="paper-weights">
+                    <p>
+                        The ground upon which an artist draws is far more than a passive backdrop; its fiber chemistry,
+                        surface tooth, and density determine how pigment binds and refracts ambient light. Paper weight
+                        is universally quantified in <strong>grams per square meter (gsm)</strong>. Lightweight
+                        sketchbook paper generally ranges between 80 and 100 gsm, suitable for swift exploratory doodles
+                        and preliminary sketches.
+                    </p>
+
+                    <p>
+                        For intensive finished pieces, artists favor heavy cartridge paper (150 to 220 gsm) or
+                        heavyweight boards (250 to 300+ gsm). Heavy sheets withstand rigorous erasing, blending stumps,
+                        and the moisture inherent in multi-media washes without warping, buckling, or surface pilling.
+                    </p>
+
+                    <p>
+                        Surface texture presents another critical variable. <em>Plate smooth</em> Bristol board offers a
+                        polished surface that allows technical drafting pens and hard graphite leads to glide
+                        effortlessly with microscopic precision. In contrast, <em>vellum</em> or <em>cold-pressed</em>
+                        sheets possess a distinct tactile grain.
+                    </p>
+
+                    <p>
+                        Toned papers (warm tan or cool slate grey) fundamentally shift an artist's working methodology.
+                        By initiating work on a mid-value background, the artist does not begin from extreme white;
+                        instead, shadows are rendered with deep graphite or charcoal, while highlights are established
+                        using white chalk, expanding the overall dynamic range.
+                    </p>
+                </article>
+
+            </section>
+
+        </div>
+
+        <!-- Site Footer -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Artisan Studio &bull; Dedicated to Traditional Draughtsmanship &amp; Fine Art Materials</p>
+            <p>Designed with Semantic HTML5, CSS3 Grid/Float Layout, and Responsive Breakpoints</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
